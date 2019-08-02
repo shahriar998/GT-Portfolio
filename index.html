@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Shahriar Elias - Bootcamp</title>
+
+    <!-- We link our html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/script/app.js"></script>
+</head>
+
+<body>
+
+    <!-- Container Div -->
+    <div class="container">
+
+        <!-- Section 1: Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Our brand / logo -->
+
+            <a href="index.html">
+                <img src="assets/images/a.jpg" href="index.html" class="img-fluid" alt="Responsive image">
+
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Search code -->
+
+            <div>
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand">My Search</a>
+                    <form class="form-inline" action="http://www.google.com/search" method="get"
+                        onSubmit="Gsitesearch(this)">
+                        <input name="q" class="form-control mr-sm-2" type="hidden" placeholder="Search"
+                            aria-label="Search">
+                        <input name="qfront" type="search" required class="form-control mr-sm-2"
+                            placeholder="Google Site Search" maxlength="100" />
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+
+                </nav>
+            </div>
+
+            <!-- Collapsible button -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- The links of our navbar -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <!-- a Dropdown menu -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Details
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="About.html">About</a>
+                            <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                            <a class="dropdown-item" href="contact.html">Contact</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Jumbotron element -->
+        <div class="jumbotron">
+
+            <!-- centered text -->
+            <h1 class="text-center"><strong>Shahriar Elias</strong></h1>
+            <h2 class="text-center">Full Stack Web Developer</h2>
+            <h3 class="text-center">Specialities: JavaScript, HTML, CSS, Node.js, Express, MySQL</h3>
+
+            <!-- button with predefined style rules -->
+            <p class="text-center">
+                <a href="Profile.pdf" class="btn btn-primary btn-lg" href="#" role="button">
+                    <span class="fa fa-envelope"></span> Shahriar's Resume</a>
+            </p>
+        </div>
+
+        <!-- a Bootstrap row with columns -->
+        <div class="row">
+
+            <!-- At large+ screens takes up half width (6/12) -->
+            <div class="col-lg-12">
+
+                <!-- centered image with thumbnail rules -->
+                <img class="img thumbnail center-block"
+                    src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/12080073_10201029481575671_8474241659443345616_o.jpg?_nc_cat=104&_nc_oc=AQmCFmEiVnbCXj2TAUzq4I7o4dlEC8UQxbZgd1EmUjBwX1j_EV5R6E7owT0NBcA2tJKtK0PKuFvnhD_nRznjPTrt&_nc_ht=scontent-atl3-1.xx&oh=6a78633e50071652a63a0b743e1b9bc0&oe=5D8C2A5F"
+                    alt="myself" width="50%">
+                <p>I'm Shahriar Bin Elias from Atlanta, Georgia and persuing full stack development course in Georgia
+                    Tech</p>
+
+                <p>Currently I'm working in Macy's Tech as a Test Analyst. On daily basis I write automation script and
+                    do validation based on stories that are provided to me.</p>
+
+                <p>Fun fact about me I love playing table tennis, like to explore new places and very much fond of
+                    driving to anywhere round the world if possible. But due to full stack development course I'll be
+                    holding down most of the fun since I want to give my full concentration to this course and graduate
+                    successfully and complete the programe.</p>
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        &copy; Copyright 2019 Shahriar Bin elias
+    </footer>
+
+    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

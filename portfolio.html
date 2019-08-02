@@ -1,0 +1,157 @@
+<!-- Bootstrap-Powered HTML -->
+
+<!-- Students:
+  1. Where is the HTML document drawing its styles from?
+
+  2. How does our browser know which element to style in which way? (ex: button face or background banner)
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Shahriar Elias - Bootcamp</title>
+
+    <!-- We link our html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/script/app.js"></script>
+</head>
+
+<body>
+
+    <!-- Container Div -->
+    <div class="container">
+
+        <!-- Section 1: Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Our brand / logo -->
+            <a href="index.html">
+                <img src="assets/images/a.jpg" href="index.html" class="img-fluid" alt="Responsive image">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Search code -->
+
+            <div>
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand">My Search</a>
+                    <form class="form-inline" action="http://www.google.com/search" method="get"
+                        onSubmit="Gsitesearch(this)">
+                        <input name="q" class="form-control mr-sm-2" type="hidden" placeholder="Search"
+                            aria-label="Search">
+                        <input name="qfront" type="search" required class="form-control mr-sm-2"
+                            placeholder="Google Site Search" maxlength="100" />
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+
+                </nav>
+            </div>
+
+            <!-- Collapsible button -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- The links of our navbar -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <!-- a Dropdown menu -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Details
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="About.html">About</a>
+                            <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                            <a class="dropdown-item" href="contact.html">Contact</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <hr>
+
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-4">
+                    <a href="https://shahriar998.github.io/Train-Scheduler/.">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://media.tenor.com/images/1dd07ff0f5fa604961f62c03af42fbde/tenor.gif">
+                            <div class="card-body" style="background-color: #5e7f7e">
+                                <h4>Train-Scheduler</h4>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://shahriar998.github.io/unit-4-game/">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://www.sideshow.com/storage/product-images/903428/infinity-gauntlet_marvel_gallery_5c4cce4febba6.jpg">
+                            <div class="card-body" style="background-color: #5e7f7e">
+                                <h4>Crystal Collector</h4>
+                                <a href="https://github.com/saeedaltaf/SMarta" class="icon brands fa-github" target="blank"><span class="label">GitHub</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://shahriar998.github.io/TriviaGame/.">
+                        <div class="card">
+                            <img height=296px; class="card-img-top"
+                                src="https://data.whicdn.com/images/171178954/original.gif">
+                            <div class="card-body" style="background-color: #5e7f7e">
+                                <h4>Trivia Game</h4>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid padding">
+            <div class="row mb-5 padding">
+                
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <a href="https://shahriar998.github.io/GIPHY-API/.">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/images/technics-q-c-640-480-7.jpg">
+                                <div class="card-body" style="background-color: #5e7f7e">
+                                    <h4>Giphy API Search</h4>
+
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Copyright 2019 Shahriar Bin Elias
+    </footer>
+
+    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
